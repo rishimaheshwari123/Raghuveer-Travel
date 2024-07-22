@@ -1,0 +1,15 @@
+.fleet {
+  background-image: linear-gradient(to right, #ff7e5f, #feb47b, #c1a30e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+.table-bg {
+  background-color: #ff4d30;
+  color: white;
+  font-size: 20px;
+}
+.loading {
+  background-color: #f6f6f6;
+}

@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #1a2980 0%,
+    #26d0ce 51%,
+    #1a2980 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  font-size: 15px;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-pink {
+  min-width: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  /* width: fit-content; */
+  color: white;
+  padding: 0.1rem;
+  /* box-shadow: 5px 5px 7px 0px #ef476f3f; */
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-weight: 500;
+  border: solid 3px transparent;
+  position: relative;
+  z-index: 100;
+  /* border-radius: 5px; */
+}
+
+.btn-pink::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.8s;
+}
+
+.btn-pink:hover::before {
+  transform: scaleX(1);
+}
+
+.btn-pink:hover {
+  border: solid 3px #115a15;
+  /* color: green; */
+  scale: 1.1;
+} 
+
+
+
+
+
+.btn-pinkk {
+  min-width: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(109, 122, 109);
+  /* width: fit-content; */
+  color: white;
+  padding: 0.1rem;
+  /* box-shadow: 5px 5px 7px 0px #ef476f3f; */
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-weight: 500;
+  border: solid 3px transparent;
+  position: relative;
+  z-index: 100;
+  /* border-radius: 5px; */
+}
+
+.btn-pinkk::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.8s;
+}
+
+.btn-pinkk:hover::before {
+  transform: scaleX(1);
+}
+
+.btn-pinkk:hover {
+  border: solid 3px #115a15;
+  /* color: green; */
+  scale: 1.1;
+} 
+
+
