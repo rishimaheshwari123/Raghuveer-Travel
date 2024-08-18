@@ -7,7 +7,6 @@ import { IconPhone } from "@tabler/icons-react";
 import axios from "axios";
 import Swal from "sweetalert2";
 
-
 function BookCar() {
   // booking car
   const [carType, setCarType] = useState("");
@@ -111,14 +110,13 @@ function BookCar() {
       }
     );
   };
-  
 
   const submitData = async (e) => {
     e.preventDefault();
     // console.log("hello")
     await calculateDistance();
 
-    console.log(totalDistance)
+    console.log(totalDistance);
     let formData = new FormData();
 
     formData.append("name", name);
@@ -155,7 +153,7 @@ function BookCar() {
         // Show success toast
         Swal.fire({
           title: `Thankyou ${name} For Booking `,
-          text: `Any Futher Information Contact - 073511 83413`,
+          text: `Any Futher Information Contact -   9993186451`,
           icon: "success",
         });
       } else {
@@ -237,11 +235,11 @@ function BookCar() {
                   </label>
                   <select value={carType} onChange={handleCar}>
                     <option>Select your car type</option>
-                    {
-                      cabs.map((car,ind)=>(
-                        <option key={ind} value={car.vName}>{car.vName}</option>
-                      ))
-                    }
+                    {cabs.map((car, ind) => (
+                      <option key={ind} value={car.vName}>
+                        {car.vName}
+                      </option>
+                    ))}
                   </select>
                 </div>
 
@@ -338,7 +336,6 @@ function BookCar() {
             </div>
           </div>
         </div>
-    
       </section>
 
       {/* modal ------------------------------------ */}
