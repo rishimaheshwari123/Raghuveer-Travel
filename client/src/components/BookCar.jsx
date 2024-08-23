@@ -71,7 +71,7 @@ function BookCar() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://cab-book-online.onrender.com/api/v1/admin/get"
+          "https://raghuveer-travel.onrender.com/api/v1/admin/get"
         );
         console.log(response.data.cabs);
         setCabs(response.data.cabs);
@@ -141,7 +141,7 @@ function BookCar() {
     try {
       // Make the POST request
       const res = await axios.post(
-        "https://cab-book-online.onrender.com/api/v1/user/booking",
+        "https://raghuveer-travel.onrender.com/api/v1/user/booking",
         formData
       );
 

@@ -42,11 +42,11 @@ function AddCab() {
     formDataToSend.append("transmission", formData.transmission);
     formDataToSend.append("fuel", formData.fuel);
     formDataToSend.append("seats", formData.seats);
-     formDataToSend.append("image", formData.image);
+    formDataToSend.append("image", formData.image);
 
     try {
       const res = await axios.post(
-        "https://cab-book-online.onrender.com/api/v1/admin/create",
+        "https://raghuveer-travel.onrender.com/api/v1/admin/create",
         formDataToSend,
         {
           headers: {

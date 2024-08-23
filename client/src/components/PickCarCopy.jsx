@@ -25,7 +25,7 @@ function PickCarCopy() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://cab-book-online.onrender.com/api/v1/admin/get"
+          "https://raghuveer-travel.onrender.com/api/v1/admin/get"
         );
         console.log(response.data.cabs);
         setCabs(response.data.cabs);

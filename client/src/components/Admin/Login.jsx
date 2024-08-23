@@ -34,12 +34,12 @@ function Login() {
     });
     try {
       const response = await axios.post(
-        "https://cab-book-online.onrender.com/api/v1/admin/login",
+        "https://raghuveer-travel.onrender.com/api/v1/admin/login",
         formData
       );
 
-      console.log()
-      if(!response?.data?.success){
+      console.log();
+      if (!response?.data?.success) {
         Swal.close();
 
         // Show success toast
@@ -48,8 +48,7 @@ function Login() {
           text: ``,
           icon: "error",
         });
-        return 
-        
+        return;
       }
       Swal.close();
 
@@ -59,8 +58,6 @@ function Login() {
         text: ``,
         icon: "success",
       });
-
-
 
       console.log(response.data);
       dispatch(setToken(response?.data.token));
